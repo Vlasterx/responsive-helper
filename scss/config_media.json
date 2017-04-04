@@ -1,0 +1,44 @@
+{
+  "resolutions": {
+    "mobile": {
+      "name":             "mobile",
+      "shortName":        "m",
+      "breakpointStart":  "320px",
+      "divisions":        "4",
+      "baseFontSize":     "14px",
+      "fluidWidth":       "true"
+    },
+    "phablet": {
+      "name":             "phablet",
+      "shortName":        "p",
+      "breakpointStart":  "520px",
+      "divisions":        "4",
+      "baseFontSize":     "14px",
+      "fluidWidth":       "true"
+    },
+    "tablet": {
+      "name":             "tablet",
+      "shortName":        "t",
+      "breakpointStart":  "768px",
+      "divisions":        "8",
+      "baseFontSize":     "16px",
+      "fluidWidth":       "true"
+    },
+    "desktop": {
+      "name":             "desktop",
+      "shortName":        "d",
+      "breakpointStart":  "1024px",
+      "divisions":        "12",
+      "baseFontSize":     "18px",
+      "fluidWidth":       "false"
+    },
+    "desktop2": {
+      "name":             "desktop2",
+      "shortName":        "d2",
+      "breakpointStart":  "1280px",
+      "divisions":        "12",
+      "baseFontSize":     "20px",
+      "fluidWidth":       "false"
+    }
+  }
+}

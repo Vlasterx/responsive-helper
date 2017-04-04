@@ -1,0 +1,72 @@
+// ------------ RESPONSIVE MEDIA MIXIN ------------ // 
+@import "mixins/bit__responsive_media_mixin"; 
+@import "generated/_map_media"; 
+// ------------ RESPONSIVE MEDIA MIXIN ------------ //  
+
+
+
+//   _____ _____ _____ _____ 
+//  |_   _|   __|   __|_   _|
+//    | | |   __|__   | | |  
+//    |_| |_____|_____| |_|  
+//                          
+
+// RESPONSIVE VARIABLES
+// --------------------
+// Responsive variables are defined in config_media.json. 
+// At the moment, only usable responive variable is `$baseFontSize`, which you can use to define 
+// responsive typography and geometry that is based on base font size
+
+// CSS OPTIMIZATION
+// ----------------
+// This gulp process is optimized in order to produce lowest possible file size. It will also delete 
+// repeated styles and will reorder everything in same media breakpoints
+
+
+// Mixin media($breakpoints...) with responsive variables
+// ------------------------------------------------------
+.mixin__media {
+  color: black;
+  
+  @include media(mobile, phablet) {
+    font-size: $baseFontSize;
+    line-height: normal;
+  }
+  
+  @include media(tablet, desktop, desktop2) {
+    font-size: $baseFontSize;
+    line-height: round($baseFontSize * 1.61);
+  }
+}
+
+
+// Mixin mediaAll() with responsive variables
+// ------------------------------------------
+// This mixin is similar to media(), but this one will be applied to all possible resolutions
+
+.mixin__mediaAll {
+  color: black;
+  
+  @include mediaAll() {
+    font-size: $baseFontSize;
+    line-height: round($baseFontSize * 1.61);
+  }
+}
+
+
+
+// Mixin mediaRange(min-resolution-name, max-resolution-name) without responsive variables
+// ---------------------------------------------------------------------------------------
+// This mixin is intended for situations where you want to envelop your CSS under one media query. 
+// Since it uses range of resolutions, responsive variables are not possible
+
+.mixin__mediaRange {
+  
+  @include mediaRange(mobile, phablet) {
+    padding: 10px;
+  }
+  
+  @include mediaRange(tablet, desktop2) {
+    padding: 20px;
+  }  
+}

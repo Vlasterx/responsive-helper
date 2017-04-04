@@ -1,0 +1,34 @@
+{
+  "name": "responsive-helper",
+  "version": "1.0.0",
+  "description": "Responsive helper",
+  "dependencies": {},
+  "devDependencies": {
+    "cli-color": "^1.2.0",
+    "del": "^2.2.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-group-css-media-queries": "^1.1.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-jsonmin": "^1.0.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-plumber-notifier": "0.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^3.1.0",
+    "run-sequence": "^1.2.2"
+  },
+  "repository": {
+    "url": "git+https://github.com/Vlasterx/responsive-helper.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/Vlasterx/responsive-helper.git",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Vladimir Jovanovic <vladimir@bitersen.com>",
+  "license": "GPL-3.0"
+}
