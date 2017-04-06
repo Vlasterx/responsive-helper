@@ -162,7 +162,7 @@ gulp.task('watch', ['watching'], function () {
 
 // Task list 
 gulp.task('final', function () {
-  runSequence('cleanUp', 'createMap', 'scss', 'done');
+  runSequence('cleanUp', 'sassMap', 'jsonMin', 'scss', 'done');
 });
 
 
