@@ -200,7 +200,7 @@ Usage: @include mediaRange(min-resolution-name, max-resolution-name) { [your CSS
   // Doesn't have min-width, but has max-width
   @if ($widthStart == false and $widthEnd == true) {
     // Output CSS with max-width media query //
-    @media (max-width: $breakpointEndResolution) {
+    @media (max-width: ($breakpointEndResolution - 1px)) {
       @content;
     }    
   }  
@@ -208,7 +208,7 @@ Usage: @include mediaRange(min-resolution-name, max-resolution-name) { [your CSS
   // Has both min and max widths
   @if ($widthStart == true and $widthEnd == true) {
     // Output CSS with min and max width media query //
-    @media (min-width: $breakpointStartResolution) and (max-width: $breakpointEndResolution) {
+    @media (min-width: $breakpointStartResolution) and (max-width: ($breakpointEndResolution - 1px)) {
       @content;
     }
   }   
