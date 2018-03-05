@@ -1,8 +1,3 @@
-// Project
-var project_name    = 'Responsive helper';
-var project_version = 'v1.0.0';
-var project_repo    = 'https://github.com/Vlasterx/responsive-helper.git';
-
 /***********
  * PLUGINS *
  ***********/
@@ -21,6 +16,9 @@ var gulp            = require('gulp'),                          // Task runner
     del             = require('del'),                           // Deletes files
     plumberNotifier = require('gulp-plumber-notifier'),         // Reports compile errors through OS messages
     runSequence     = require('run-sequence').use(gulp);        // Runs tasks in order
+
+// Project information
+var pkg = require('./package.json');
 
 // Colored log messages
 var red     = clc.red.bold,
@@ -111,16 +109,15 @@ gulp.task('createMap', function(){
 });
 
 
-// DONE message
+// Done message
 gulp.task('done', function() {
-  console.log(cyan('-------------------------------------------------------------------------------'));
-  console.log(blue(project_name+'\n'));
-  console.log(cyan('> Project home:  '+project_repo));
-  console.log(cyan('> Author home:   https://www.bitersen.com'));
-  console.log(cyan('> Author blog:   https://medium.com/@vlasterx\n'));
-  console.log(blue(':) Thank you for using '+project_name+' '+project_version));
-  console.log(cyan('-------------------------------------------------------------------------------'));
-})
+  console.log(green('\n\n------------------------------------------------------------------------'));
+  console.log(yellow(pkg.name + ' ' + pkg.version) + green(' build process is complete! \n'));
+  console.log(blue('> Author:       ') + red(pkg.author.name + ' <' + pkg.author.email + '>'));
+  console.log(blue('> Author url:   ') + blue2(pkg.author.url));
+  console.log(blue('> Project url:  ') + blue2(pkg.homepage));
+  console.log(green('------------------------------------------------------------------------\n\n'));
+});
 
 
 // Cleanup
