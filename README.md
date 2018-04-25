@@ -121,10 +121,8 @@ This mixin is intended for situations where you want to envelop your CSS under o
     }
   
 
-## Questions?
-If you have any questions, contact me on [Twitter](https://twitter.com/vlasterx)
-
+--- 
 
 ## Author
 Vladimir Jovanović
-[web site](http://www.bitersen.com) | [Twitter](https://twitter.com/vlasterx) | [Facebook](https://vx.rs/face) | [LinkedIn](http://vx.rs/linkedin)
+[Bitersen](https://www.bitersen.com) | [Facebook](https://vx.rs/face) | [LinkedIn](http://vx.rs/linkedin) | [Medium blog](https://www.medium.com/bitersen) 
