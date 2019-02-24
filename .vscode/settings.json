@@ -1,0 +1,85 @@
+{
+  // Automatically open explorer view on the end of a debug session
+  "debug.openExplorerOnEnd": true,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": true,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [80,120,160],
+  "editor.trimAutoWhitespace": true,
+  "editor.wordWrap": "on",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "window.zoomLevel": 0,
+  "workbench.editor.closeOnFileDelete": false,
+  "workbench.sideBar.location": "left",
+  "workbench.statusBar.visible": true,
+  "editor.tabSize": 2,
+  "beautify.tabSize": 2,
+  // Configure editor settings to be overridden for [javascript] language.
+  "[javascript]":  {
+    // "editor.insertSpaces": true,
+    "editor.insertSpaces": false,
+    "editor.tabSize": 2
+  },
+  // Configure editor settings to be overridden for [json] language.
+  "[json]":  {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  // Configure editor settings to be overridden for [markdown] language.
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "files.trimTrailingWhitespace": false
+  },
+  // Configure editor settings to be overridden for [python] language.
+  "[python]":  {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  // Configure editor settings to be overridden for [typescript] language.
+  "[typescript]":  {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[xml]": {
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "[css]": {
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "[yaml]": {
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "[vue]": {
+    "editor.insertSpaces": false,
+    "editor.wordWrap": "on",
+    "editor.tabSize": 2
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "eslint.enable": true
+}

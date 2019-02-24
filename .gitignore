@@ -10,13 +10,14 @@
 Icon?
 ehthumbs.db
 Thumbs.db
-
+sh.exe.stackdump
+.sass-cache/*
+node_modules/*
 
 #################
 # Project files #
 #################
-.sass-cache/*
-node_modules/*
-scss/generated/*
-css/*
 yarn-error.log
+node_modules/
+generated/
+dist/
