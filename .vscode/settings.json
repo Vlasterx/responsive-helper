@@ -64,7 +64,7 @@
     "editor.tabSize": 2
   },
   "[yaml]": {
-    "editor.insertSpaces": false,
+    "editor.insertSpaces": true,
     "editor.wordWrap": "on",
     "editor.tabSize": 2
   },
