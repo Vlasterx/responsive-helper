@@ -8,7 +8,7 @@ Benefits:
   - Define resolutions and breakpoints in one config file
   - Use named resolutions with no need to remember min-width or max-width values
   - Use dynamic variables for each resolution
-  - Gulp process produces optmized CSS
+  - Gulp process produces optimized CSS
   - CSS code is encapsulated within media breakpoints, which prevents accidental style leaking to unwanted places
   
 ## Configuration
@@ -94,7 +94,7 @@ This mixin enables you to write code similar to this
 }
 ```
 
-As you can see, you can use responsive code directly in your class/ID. At the moment, only usable responive variable is `$baseFontSize`, which you can use to define responsive typography and geometry that is based on base font size. 
+As you can see, you can use responsive code directly in your class/ID. At the moment, only usable responsive variable is `$baseFontSize`, which you can use to define responsive typography and geometry that is based on base font size. 
 
 If you take a look at `scss/config_media.json`, you will see that each breakpoint has it's own `baseFontSize` value. That value is used later as SCSS variable `$baseFontSize`.
 
