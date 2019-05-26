@@ -1,11 +1,11 @@
 {
   "name": "responsive-helper",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Responsive helper",
   "dependencies": {},
   "devDependencies": {
     "chalk": "^2.4.2",
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "filesize": "^4.1.2",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
