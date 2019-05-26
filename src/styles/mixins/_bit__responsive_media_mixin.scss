@@ -33,7 +33,7 @@
 			@if (length($resolutions) > 1 and $i==1 and $breakpoint==to-lower-case($breakpointName)) {
 				// Breakpoint #{$i} - #{$breakpointName}
 				$nextResolution: nth(map-values($resolutions), $i+1);
-				$breakpointEnd: map-get($nextResolution, breakpointStart) - 1px !global;
+				$breakpointEnd: map-get($nextResolution, breakpointStart) - 0.1px !global;
 				@media (max-width: $breakpointEnd) {
 					@content;
 				}
@@ -44,7 +44,7 @@
 			@if (length($resolutions) > 1 and $i > 1 and $i < length($resolutions) and $breakpoint==to-lower-case($breakpointName)) {
 				// Breakpoint #{$i} - #{$breakpointName}
 				$nextResolution: nth(map-values($resolutions), $i+1);
-				$breakpointEnd: map-get($nextResolution, breakpointStart) - 1px !global;
+				$breakpointEnd: map-get($nextResolution, breakpointStart) - 0.1px !global;
 				@media (min-width: $breakpointStart) and (max-width: $breakpointEnd) {
 					@content;
 				}
@@ -148,7 +148,7 @@ Usage: @include mediaRange(min-resolution-name, max-resolution-name) { [your CSS
 	$breakpointEndResolution: map-get($resolution, breakpointStart) !global;
 
 	// If breakpointTo is not the last one in map, it means that end of that breakpoint
-	// is acutally a start of next one
+	// is actually a start of next one
 	@if ($breakpointEndNo != $totalBreakpoints) {
 		$nextResolution: nth(map-values($resolutions), $i+1);
 		$breakpointEndResolution: map-get($nextResolution, breakpointStart) !global;
@@ -206,7 +206,7 @@ Usage: @include mediaRange(min-resolution-name, max-resolution-name) { [your CSS
 // Doesn't have min-width, but has max-width
 @if ($widthStart == false and $widthEnd == true) {
 	// Output CSS with max-width media query //
-	@media (max-width: ($breakpointEndResolution - 1px)) {
+	@media (max-width: ($breakpointEndResolution - 0.1px)) {
 		@content;
 	}
 }
@@ -244,9 +244,9 @@ Example:
 		$breakpointName: map-get($resolution, name) !global;
 
 		@if ($breakpoint == $breakpointName) {
-  		$baseFontSize: map-get($resolution, baseFontSize) !global;
-  		$basePx: baselineHeight($baseFontSize, $baseFontSize) !global; // Responsive padding, and default baseline height
-  		$base: remBaselineHeight(1rem) !global;
+      $baseFontSize: map-get($resolution, baseFontSize) !global;
+      $basePx: baselineHeight($baseFontSize, $baseFontSize) !global; // Responsive padding, and default baseline height
+      $base: remBaselineHeight(1rem) !global;
 
 			// If there is only one resolution in list
 			@if (length($resolutions)==1 and $breakpoint==to-lower-case($breakpointName)) {
@@ -260,7 +260,7 @@ Example:
 				// Breakpoint #{$i} - #{$breakpointName}
 				$breakpointStart: 0 !global;
 				$nextResolution: nth(map-values($resolutions), $i+1);
-				$breakpointEnd: map-get($nextResolution, breakpointStart) - 1px !global;
+				$breakpointEnd: map-get($nextResolution, breakpointStart) - 0.1px !global;
 				@content;
 			}
 
@@ -270,7 +270,7 @@ Example:
 				// Breakpoint #{$i} - #{$breakpointName}
 				$breakpointStart: map-get($resolution, breakpointStart) !global;
 				$nextResolution: nth(map-values($resolutions), $i+1);
-				$breakpointEnd: map-get($nextResolution, breakpointStart) - 1px !global;
+				$breakpointEnd: map-get($nextResolution, breakpointStart) - 0.1px !global;
 
 				@content;
 			}
