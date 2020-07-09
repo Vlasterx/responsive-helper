@@ -132,4 +132,4 @@ This mixin is intended for situations where you want to envelop your CSS under o
 
 ## Author
 Vladimir Jovanović
-[Bitersen](https://www.bitersen.com) | [Facebook](https://www.facebook.com/vladimir.webdesign) | [LinkedIn](https://www.linkedin.com/in/vladimir79/) | [Medium blog](https://medium.com/bitersen) 
+[Site](https://webdizajn.org) | [LinkedIn](https://www.linkedin.com/in/vladimir79/) | [Medium blog](https://medium.com/bitersen) 
